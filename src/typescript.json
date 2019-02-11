@@ -1,0 +1,36 @@
+{
+    "Create LitElement Component": {
+		"prefix": "litele",
+		"body": [
+			"import { LitElement, customElement } from 'lit-element';",
+			"",
+			"@customElement('${TM_FILENAME_BASE}')",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "\t${0}",
+			"}"
+		],
+		"description": "New LitElement subclass"
+    },
+    "Create LitElement Component With lit-html": {
+		"prefix": "litelehtml",
+		"body": [
+			"import { LitElement, html, customElement } from 'lit-element';",
+			"",
+			"@customElement('${TM_FILENAME_BASE}')",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "",
+			"\trender() {",
+			"\t\treturn html`${0}`;",
+			"\t}",
+			"}"
+		],
+		"description": "New LitElement subclass with lit-html"
+    },
+    "Generate LitElement Property": {
+		"prefix": "litprop",
+		"body": [
+			"@property({type: ${1|String,Number,Boolean,Array,Object|}}) ${2:propName};"
+		],
+		"description": "Generate LitElement Property"
+    }
+}

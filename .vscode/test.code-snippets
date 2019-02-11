@@ -1,0 +1,111 @@
+{
+	"Create LitElement Component in Typescript": {
+		"scope": "typescript",
+		"prefix": "litele",
+		"body": [
+			"import { LitElement, customElement } from 'lit-element';",
+			"",
+			"@customElement('${TM_FILENAME_BASE}')",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "\t${0}",
+			"}"
+		],
+		"description": "New LitElement subclass"
+    },
+    "Create LitElement Component in Javascript": {
+		"scope": "javascript",
+		"prefix": "litele",
+		"body": [
+			"import { LitElement } from 'lit-element';",
+			"",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "\t${0}",
+            "}",
+            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+		],
+		"description": "New LitElement subclass"
+	},
+	"Create LitElement Component With lit-html": {
+		"scope": "typescript",
+		"prefix": "litelehtml",
+		"body": [
+			"import { LitElement, html, customElement } from 'lit-element';",
+			"",
+			"@customElement('${TM_FILENAME_BASE}')",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "",
+			"\trender() {",
+			"\t\treturn html`${0}`;",
+			"\t}",
+			"}"
+		],
+		"description": "New LitElement subclass with lit-html"
+    },
+    "Create LitElement Component With lit-html in Javascript": {
+		"scope": "javascript",
+		"prefix": "litelehtml",
+		"body": [
+			"import { LitElement, html } from 'lit-element';",
+			"",
+            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "",
+            "\trender() {",
+            "\t\treturn html`${0}`;",
+            "\t}",
+            "}",
+            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+		],
+		"description": "New LitElement subclass"
+	},
+	"Generate Render Function With lit-html": {
+		"scope": "javascript,typescript",
+		"prefix": "litrender",
+		"body": [
+			"render() {",
+			"\treturn html``;",
+			"}"
+		],
+		"description": "Generate render function with lit-html"
+	},
+	"Generate LitElement Property in Typescript": {
+		"scope": "typescript",
+		"prefix": "litprop",
+		"body": [
+			"@property({type: ${1|String,Number,Boolean,Array,Object|}}) ${2:propName};"
+		],
+		"description": "Generate LitElement Property"
+    },
+    "Generate LitElement Property in Javascript": {
+		"scope": "javascript",
+		"prefix": "litprop",
+		"body": [
+            "static get properties() {",
+            "\treturn {",
+            "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
+            "\t};",
+            "}"
+		],
+		"description": "Generate LitElement Property"
+    },
+    "Generate LitElement Static Style": {
+        "scope": "javascript,typescript",
+        "prefix": "litstyle",
+        "body": [
+            "static styles = css``;"
+        ]
+    },
+    "Add New Event Listener": {
+        "scope": "javascript,typescript",
+        "prefix": "addeventlistener",
+        "body": [
+            "this.addEventListener('${1:eventName}', ${2:handler});"
+        ]
+    },
+    "Add New Custome Event": {
+        "scope": "javascript,typescript",
+        "prefix": "customevent",
+        "body": [
+            "new CustomEvent('${1:eventName}');"
+        ]
+    }
+}

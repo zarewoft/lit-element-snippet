@@ -1,0 +1,51 @@
+{
+ "name": "lit-element-snippet",
+ "version": "1.0.0",
+ "displayName": "LitElement Snippet",
+ "description": "LitElement Snippet",
+ "categories": [
+  "Snippets"
+ ],
+ "engines": {
+  "vscode": "^1.5.0"
+ },
+ "icon": "images/icon.png",
+ "galleryBanner": {
+  "color": "#2196F3",
+  "theme": "dark"
+ },
+ "contributes": {
+  "snippets": [
+   {
+    "language": "javascript,typescript",
+    "path": "./src/common.json"
+   },
+   {
+    "language": "javascript",
+    "path": "./src/javascript.json"
+   },
+   {
+    "language": "typescript",
+    "path": "./src/typescript.json"
+   }
+  ]
+ },
+ "keywords": [
+  "lit",
+  "litelement"
+ ],
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/zarewoft/lit-element-snippet.git"
+ },
+ "author": "Tanakrit Saisillapee",
+ "publisher": "Zarewoft Co.,Ltd",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/zarewoft/lit-element-snippet/issues"
+ },
+ "homepage": "https://github.com/zarewoft/lit-element-snippet#readme",
+ "devDependencies": {
+  "vsce": "^1.57.0"
+ }
+}
