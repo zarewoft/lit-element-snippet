@@ -29,7 +29,7 @@
     "Generate LitElement Property": {
 		"prefix": "litprop",
 		"body": [
-			"@property({type: ${1|String,Number,Boolean,Array,Object|}}) ${2:propName};"
+			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName};"
 		],
 		"description": "Generate LitElement Property"
     }
