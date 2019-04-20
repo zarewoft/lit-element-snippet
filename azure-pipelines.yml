@@ -4,7 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  batch: true
+  tags:
+    include:
+    - v*
 
 pool:
   vmImage: 'Ubuntu-16.04'
@@ -17,5 +20,5 @@ steps:
 
 - script: |
     npm install
-    npm run build
+    npm run publish -- -p $(PERSONAL_TOKEN)
   displayName: 'npm install and build'

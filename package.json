@@ -51,5 +51,8 @@
     "homepage": "https://github.com/zarewoft/lit-element-snippet#readme",
     "devDependencies": {
         "vsce": "^1.59.0"
+    },
+    "scripts": {
+        "publish": "vsce publish"
     }
 }
