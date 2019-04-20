@@ -15,19 +15,24 @@
         "theme": "dark"
     },
     "contributes": {
-        "snippets": [{
-            "language": "javascript",
-            "path": "./src/common.json"
-        }, {
-            "language": "typescript",
-            "path": "./src/common.json"
-        }, {
-            "language": "javascript",
-            "path": "./src/javascript.json"
-        }, {
-            "language": "typescript",
-            "path": "./src/typescript.json"
-        }]
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./src/common.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./src/common.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./src/javascript.json"
+            },
+            {
+                "language": "typescript",
+                "path": "./src/typescript.json"
+            }
+        ]
     },
     "keywords": [
         "lit",
@@ -45,6 +50,6 @@
     },
     "homepage": "https://github.com/zarewoft/lit-element-snippet#readme",
     "devDependencies": {
-        "vsce": "^1.57.0"
+        "vsce": "^1.59.0"
     }
 }
