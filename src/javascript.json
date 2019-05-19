@@ -4,10 +4,10 @@
 		"body": [
 			"import { LitElement } from 'lit-element';",
 			"",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
-            "\t${0}",
-            "}",
-            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+      "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+      "\t${0}",
+      "}",
+      "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
 		],
 		"description": "New LitElement subclass"
 	},
@@ -16,24 +16,24 @@
 		"body": [
 			"import { LitElement, html } from 'lit-element';",
 			"",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
-            "",
-            "\trender() {",
-            "\t\treturn html`${0}`;",
-            "\t}",
-            "}",
-            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+      "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+      "",
+      "\trender() {",
+      "\t\treturn html`${0}`;",
+      "\t}",
+      "}",
+      "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
 		],
 		"description": "New LitElement subclass"
 	},
     "Generate LitElement Property": {
 		"prefix": "litprop",
 		"body": [
-            "static get properties() {",
-            "\treturn {",
-            "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
-            "\t};",
-            "}"
+      "static get properties() {",
+      "\treturn {",
+      "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
+      "\t};",
+      "}"
 		],
 		"description": "Generate LitElement Property"
     }

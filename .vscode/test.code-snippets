@@ -6,7 +6,7 @@
 			"import { LitElement, customElement } from 'lit-element';",
 			"",
 			"@customElement('${TM_FILENAME_BASE}')",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "\t${0}",
 			"}"
 		],
@@ -18,7 +18,7 @@
 		"body": [
 			"import { LitElement } from 'lit-element';",
 			"",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "\t${0}",
             "}",
             "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
@@ -32,7 +32,7 @@
 			"import { LitElement, html, customElement } from 'lit-element';",
 			"",
 			"@customElement('${TM_FILENAME_BASE}')",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "",
 			"\trender() {",
 			"\t\treturn html`${0}`;",
@@ -47,7 +47,7 @@
 		"body": [
 			"import { LitElement, html } from 'lit-element';",
 			"",
-            "class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "",
             "\trender() {",
             "\t\treturn html`${0}`;",
