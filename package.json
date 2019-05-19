@@ -1,6 +1,6 @@
 {
     "name": "lit-element-snippet",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "displayName": "LitElement Snippet",
     "description": "LitElement Snippet",
     "categories": [
@@ -50,7 +50,7 @@
     },
     "homepage": "https://github.com/zarewoft/lit-element-snippet#readme",
     "devDependencies": {
-        "vsce": "^1.59.0"
+        "vsce": "^1.61.0"
     },
     "scripts": {
         "publish": "vsce publish"
