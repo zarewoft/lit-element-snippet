@@ -6,7 +6,7 @@ LitElement snippet for Visual Studio Code.
 #### Javascript
 ![Javascript Demo](https://github.com/zarewoft/lit-element-snippet/raw/master/images/screenshot-js.gif)
 
-#### Javascript
+#### Typescript
 ![Typescript Demo](https://github.com/zarewoft/lit-element-snippet/raw/master/images/screenshot-ts.gif)
 
 ## Features
