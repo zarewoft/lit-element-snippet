@@ -1,13 +1,13 @@
 {
     "Generate Render Function With lit-html": {
-		"prefix": "litrender",
-		"body": [
-			"render() {",
-			"\treturn html``;",
-			"}"
-		],
-		"description": "Generate render function with lit-html"
-	},
+        "prefix": "litrender",
+        "body": [
+            "render() {",
+            "\treturn html``;",
+            "}"
+        ],
+        "description": "Generate render function with lit-html"
+    },
     "Generate LitElement Static Style": {
         "prefix": "litstyle",
         "body": [

@@ -1,5 +1,5 @@
 {
-    "Create LitElement Component": {
+	"Create LitElement Component": {
 		"prefix": "litele",
 		"body": [
 			"import { LitElement, customElement } from 'lit-element';",
@@ -11,8 +11,8 @@
 			""
 		],
 		"description": "New LitElement subclass"
-    },
-    "Create LitElement Component With lit-html": {
+	},
+	"Create LitElement Component With lit-html": {
 		"prefix": "litelehtml",
 		"body": [
 			"import { LitElement, html, customElement, css } from 'lit-element';",
@@ -33,12 +33,26 @@
 			""
 		],
 		"description": "New LitElement subclass with lit-html"
-    },
-    "Generate LitElement Property": {
+	},
+	"Generate LitElement Property": {
 		"prefix": "litprop",
 		"body": [
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
 		],
 		"description": "Generate LitElement Property"
-    }
+	},
+	"Generate Element Query Property": {
+	  "prefix": "litquery",
+	  "body": [
+		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
+	  ],
+	  "description": "Generate Element Query Property"
+	},
+	"Generate Elements Query Property": {
+	  "prefix": "litqueryall",
+	  "body": [
+		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
+	  ],
+	  "description": "Generate Elements Query Property"
+	}
 }
