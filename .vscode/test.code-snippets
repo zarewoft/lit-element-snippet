@@ -75,25 +75,25 @@
 	},
 	"Generate Render Function With lit-html": {
 		"scope": "javascript,typescript",
-		"prefix": "litrender",
+		"prefix": ["litrender", "render"],
 		"body": [
 			"render() {",
-			"\treturn html``;",
+			"\treturn html`${0}`;",
 			"}"
 		],
 		"description": "Generate render function with lit-html"
 	},
 	"Generate LitElement Property in Typescript": {
 		"scope": "typescript",
-		"prefix": "litprop",
+		"prefix": ["litprop", "property", "@property"],
 		"body": [
-			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
+			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
 		"description": "Generate LitElement Property"
 	},
-	"Generate LitElement Property in Javascript": {
+	"Generate LitElement Properties in Javascript": {
 		"scope": "javascript",
-		"prefix": "litprop",
+		"prefix": ["litprop", "properties"],
 		"body": [
 			"static get properties() {",
 			"\treturn {",
@@ -105,7 +105,7 @@
 	},
 	"Generate Element Query Property in Javascript": {
 		"scope": "javascript",
-		"prefix": "litquery",
+		"prefix": ["litquery", "query"],
 		"body": [
 			"get ${1:propName}() {",
 			"\treturn this.shadowRoot.querySelector('${2:queryString}');",
@@ -115,7 +115,7 @@
 	},
 	"Generate Element Query Property in Typescript": {
 		"scope": "typescript",
-		"prefix": "litquery",
+		"prefix": ["litquery", "query", "@query"],
 		"body": [
 			"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
 		],
@@ -123,7 +123,7 @@
 	},
 	"Generate Elements Query Property in Javascript": {
 		"scope": "javascript",
-		"prefix": "litqueryall",
+		"prefix": ["litqueryall", "queryall"],
 		"body": [
 			"get ${1:propName}() {",
 			"\treturn this.shadowRoot.querySelectorAll('${2:queryString}');",
@@ -133,27 +133,27 @@
 	},
 	"Generate Elements Query Property in Typescript": {
 		"scope": "typescript",
-		"prefix": "litqueryall",
+		"prefix": ["litqueryall", "queryall", "@queryall"],
 		"body": [
 			"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
 		],
 		"description": "Generate Elements Query Property"
 	},
-    "Generate LitElement Static Style": {
+    "Generate LitElement Static Styles": {
 		"scope": "javascript,typescript",
-		"prefix": "litstyle",
+		"prefix": ["litstyles", "styles"],
 		"body": [
-			"static styles = css``;"
+			"static styles = css`${0}`;"
 		]
 	},
 	"Add New Event Listener": {
 		"scope": "javascript,typescript",
 		"prefix": "addeventlistener",
 		"body": [
-			"this.addEventListener('${1:eventName}', ${2:handler});"
+			"this.addEventListener('${1:eventName}', ${2:handler});${0}"
 		]
 	},
-	"Add New Custome Event": {
+	"Add New Custom Event": {
 		"scope": "javascript,typescript",
 		"prefix": "customevent",
 		"body": [

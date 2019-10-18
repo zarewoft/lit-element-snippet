@@ -35,21 +35,21 @@
 		"description": "New LitElement subclass with lit-html"
 	},
 	"Generate LitElement Property": {
-		"prefix": "litprop",
+		"prefix": ["litprop", "property", "@property"],
 		"body": [
-			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
+			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
 		"description": "Generate LitElement Property"
 	},
 	"Generate Element Query Property": {
-	  "prefix": "litquery",
+	  "prefix": ["litquery", "query", "@query"],
 	  "body": [
 		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
 	  ],
 	  "description": "Generate Element Query Property"
 	},
 	"Generate Elements Query Property": {
-	  "prefix": "litqueryall",
+	  "prefix": ["litqueryall", "queryall", "@queryall"],
 	  "body": [
 		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
 	  ],
