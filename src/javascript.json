@@ -44,5 +44,14 @@
       "}"
     ],
     "description": "Generate LitElement Property"
+  },
+  "Generate Element Query Property": {
+    "prefix": "litquery",
+    "body": [
+      "get ${1:propName}() {",
+      "\treturn this.shadowRoot.querySelector('${2:queryString}');",
+      "}${0}"
+    ],
+    "description": "Generate Element Query Property"
   }
 }
