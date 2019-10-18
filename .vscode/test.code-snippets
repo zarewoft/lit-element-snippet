@@ -85,7 +85,7 @@
 	},
 	"Generate LitElement Property in Typescript": {
 		"scope": "typescript",
-		"prefix": ["litprop", "property"],
+		"prefix": ["litprop", "property", "@property"],
 		"body": [
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
@@ -115,7 +115,7 @@
 	},
 	"Generate Element Query Property in Typescript": {
 		"scope": "typescript",
-		"prefix": ["litquery", "query"],
+		"prefix": ["litquery", "query", "@query"],
 		"body": [
 			"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
 		],
@@ -133,7 +133,7 @@
 	},
 	"Generate Elements Query Property in Typescript": {
 		"scope": "typescript",
-		"prefix": ["litqueryall", "queryall"],
+		"prefix": ["litqueryall", "queryall", "@queryall"],
 		"body": [
 			"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
 		],
