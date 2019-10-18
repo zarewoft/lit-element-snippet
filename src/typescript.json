@@ -44,14 +44,14 @@
 	"Generate Element Query Property": {
 	  "prefix": ["litquery", "query", "@query"],
 	  "body": [
-		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
+		"@query('${1:queryString}') ${2:propName}: ${3:HTMLElement};${0}"
 	  ],
 	  "description": "Generate Element Query Property"
 	},
 	"Generate Elements Query Property": {
 	  "prefix": ["litqueryall", "queryall", "@queryall"],
 	  "body": [
-		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
+		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:HTMLElement}>;${0}"
 	  ],
 	  "description": "Generate Elements Query Property"
 	}
