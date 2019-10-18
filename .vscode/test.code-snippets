@@ -87,7 +87,7 @@
 		"scope": "typescript",
 		"prefix": "litprop",
 		"body": [
-			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
+			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
 		"description": "Generate LitElement Property"
 	},
