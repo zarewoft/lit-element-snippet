@@ -40,5 +40,12 @@
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
 		],
 		"description": "Generate LitElement Property"
+	},
+	"Generate Element Query Property": {
+	  "prefix": "litquery",
+	  "body": [
+		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
+	  ],
+	  "description": "Generate Element Query Property"
 	}
 }
