@@ -3,7 +3,7 @@
         "prefix": "litrender",
         "body": [
             "render() {",
-            "\treturn html``;",
+            "\treturn html`${0}`;",
             "}"
         ],
         "description": "Generate render function with lit-html"
