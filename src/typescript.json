@@ -42,7 +42,7 @@
 		"description": "Generate LitElement Property"
 	},
 	"Generate Element Query Property": {
-	  "prefix": "litquery",
+	  "prefix": ["litquery", "query"],
 	  "body": [
 		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
 	  ],

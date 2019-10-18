@@ -46,7 +46,7 @@
     "description": "Generate LitElement Properties"
   },
   "Generate Element Query Property": {
-    "prefix": "litquery",
+    "prefix": ["litquery", "query"],
     "body": [
       "get ${1:propName}() {",
       "\treturn this.shadowRoot.querySelector('${2:queryString}');",
