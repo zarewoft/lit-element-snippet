@@ -139,9 +139,9 @@
 		],
 		"description": "Generate Elements Query Property"
 	},
-    "Generate LitElement Static Style": {
+    "Generate LitElement Static Styles": {
 		"scope": "javascript,typescript",
-		"prefix": "litstyle",
+		"prefix": ["litstyles", "styles"],
 		"body": [
 			"static styles = css`${0}`;"
 		]

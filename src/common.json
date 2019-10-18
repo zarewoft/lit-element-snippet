@@ -8,8 +8,8 @@
         ],
         "description": "Generate render function with lit-html"
     },
-    "Generate LitElement Static Style": {
-        "prefix": "litstyle",
+    "Generate LitElement Static Styles": {
+        "prefix": ["litstyles", "styles"],
         "body": [
             "static styles = css`${0}`;"
         ]
