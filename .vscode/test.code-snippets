@@ -8,7 +8,8 @@
 			"@customElement('${TM_FILENAME_BASE}')",
             "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "\t${0}",
-			"}"
+			"}",
+			""
 		],
 		"description": "New LitElement subclass"
     },
@@ -21,7 +22,8 @@
             "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
             "\t${0}",
             "}",
-            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+			"customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
+			""
 		],
 		"description": "New LitElement subclass"
 	},
@@ -43,7 +45,8 @@
 			"\trender() {",
 			"\t\treturn html`${0}`;",
 			"\t}",
-			"}"
+			"}",
+			""
 		],
 		"description": "New LitElement subclass with lit-html"
     },
@@ -65,7 +68,8 @@
             "\t\treturn html`${0}`;",
             "\t}",
             "}",
-            "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});"
+			"customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
+			""
 		],
 		"description": "New LitElement subclass"
 	},
