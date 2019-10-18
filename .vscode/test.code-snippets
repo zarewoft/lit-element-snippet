@@ -150,7 +150,7 @@
 		"scope": "javascript,typescript",
 		"prefix": "addeventlistener",
 		"body": [
-			"this.addEventListener('${1:eventName}', ${2:handler});"
+			"this.addEventListener('${1:eventName}', ${2:handler});${0}"
 		]
 	},
 	"Add New Custome Event": {
