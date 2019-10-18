@@ -91,13 +91,21 @@
 		],
 		"description": "Generate LitElement Property"
 	},
+	"Generate LitElement Property in Javascript": {
+		"scope": "javascript",
+		"prefix": ["property"],
+		"body": [
+			"${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} },${0}",
+		],
+		"description": "Generate LitElement Property"
+	},
 	"Generate LitElement Properties in Javascript": {
 		"scope": "javascript",
 		"prefix": ["litprop", "properties"],
 		"body": [
 			"static get properties() {",
 			"\treturn {",
-			"\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
+			"\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} },${0}",
 			"\t};",
 			"}"
 		],
