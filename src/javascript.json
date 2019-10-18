@@ -34,8 +34,8 @@
     ],
     "description": "New LitElement subclass"
   },
-  "Generate LitElement Property": {
-    "prefix": "litprop",
+  "Generate LitElement Properties": {
+    "prefix": ["litprop", "properties"],
     "body": [
       "static get properties() {",
       "\treturn {",
@@ -43,7 +43,7 @@
       "\t};",
       "}"
     ],
-    "description": "Generate LitElement Property"
+    "description": "Generate LitElement Properties"
   },
   "Generate Element Query Property": {
     "prefix": "litquery",

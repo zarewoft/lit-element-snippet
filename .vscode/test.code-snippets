@@ -85,15 +85,15 @@
 	},
 	"Generate LitElement Property in Typescript": {
 		"scope": "typescript",
-		"prefix": "litprop",
+		"prefix": ["litprop", "property"],
 		"body": [
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
 		"description": "Generate LitElement Property"
 	},
-	"Generate LitElement Property in Javascript": {
+	"Generate LitElement Properties in Javascript": {
 		"scope": "javascript",
-		"prefix": "litprop",
+		"prefix": ["litprop", "properties"],
 		"body": [
 			"static get properties() {",
 			"\treturn {",

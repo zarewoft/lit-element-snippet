@@ -35,7 +35,7 @@
 		"description": "New LitElement subclass with lit-html"
 	},
 	"Generate LitElement Property": {
-		"prefix": "litprop",
+		"prefix": ["litprop", "property"],
 		"body": [
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};${0}"
 		],
