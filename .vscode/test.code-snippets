@@ -123,7 +123,7 @@
 	},
 	"Generate Elements Query Property in Javascript": {
 		"scope": "javascript",
-		"prefix": "litqueryall",
+		"prefix": ["litqueryall", "queryall"],
 		"body": [
 			"get ${1:propName}() {",
 			"\treturn this.shadowRoot.querySelectorAll('${2:queryString}');",
@@ -133,7 +133,7 @@
 	},
 	"Generate Elements Query Property in Typescript": {
 		"scope": "typescript",
-		"prefix": "litqueryall",
+		"prefix": ["litqueryall", "queryall"],
 		"body": [
 			"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
 		],

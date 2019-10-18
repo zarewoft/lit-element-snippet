@@ -55,7 +55,7 @@
     "description": "Generate Element Query Property"
   },
   "Generate Elements Query Property": {
-    "prefix": "litqueryall",
+    "prefix": ["litqueryall", "queryall"],
     "body": [
       "get ${1:propName}() {",
       "\treturn this.shadowRoot.querySelectorAll('${2:queryString}');",
