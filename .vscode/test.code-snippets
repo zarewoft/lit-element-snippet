@@ -6,22 +6,22 @@
 			"import { LitElement, customElement } from 'lit-element';",
 			"",
 			"@customElement('${TM_FILENAME_BASE}')",
-            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
-            "\t${0}",
+			"export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+			"\t${0}",
 			"}",
 			""
 		],
 		"description": "New LitElement subclass"
-    },
-    "Create LitElement Component in Javascript": {
+	},
+	"Create LitElement Component in Javascript": {
 		"scope": "javascript",
 		"prefix": "litele",
 		"body": [
 			"import { LitElement } from 'lit-element';",
 			"",
-            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
-            "\t${0}",
-            "}",
+			"export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+			"\t${0}",
+			"}",
 			"customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
 			""
 		],
@@ -34,29 +34,7 @@
 			"import { LitElement, html, customElement, css } from 'lit-element';",
 			"",
 			"@customElement('${TM_FILENAME_BASE}')",
-            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
-            "",
-            "\tstatic styles = css`",
-            "\t:host {",
-            "\t\tdisplay: block;",
-            "\t}",
-            "\t`;",
-            "",
-			"\trender() {",
-			"\t\treturn html`${0}`;",
-			"\t}",
-			"}",
-			""
-		],
-		"description": "New LitElement subclass with lit-html"
-    },
-    "Create LitElement Component With lit-html in Javascript": {
-		"scope": "javascript",
-		"prefix": "litelehtml",
-		"body": [
-			"import { LitElement, html, css } from 'lit-element';",
-			"",
-            "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+			"export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
 			"",
 			"\tstatic styles = css`",
 			"\t:host {",
@@ -64,10 +42,32 @@
 			"\t}",
 			"\t`;",
 			"",
-            "\trender() {",
-            "\t\treturn html`${0}`;",
-            "\t}",
-            "}",
+			"\trender() {",
+			"\t\treturn html`${0}`;",
+			"\t}",
+			"}",
+			""
+		],
+		"description": "New LitElement subclass with lit-html"
+	},
+	"Create LitElement Component With lit-html in Javascript": {
+		"scope": "javascript",
+		"prefix": "litelehtml",
+		"body": [
+			"import { LitElement, html, css } from 'lit-element';",
+			"",
+			"export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
+			"",
+			"\tstatic styles = css`",
+			"\t:host {",
+			"\t\tdisplay: block;",
+			"\t}",
+			"\t`;",
+			"",
+			"\trender() {",
+			"\t\treturn html`${0}`;",
+			"\t}",
+			"}",
 			"customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
 			""
 		],
@@ -90,38 +90,74 @@
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
 		],
 		"description": "Generate LitElement Property"
-    },
-    "Generate LitElement Property in Javascript": {
+	},
+	"Generate LitElement Property in Javascript": {
 		"scope": "javascript",
 		"prefix": "litprop",
 		"body": [
-            "static get properties() {",
-            "\treturn {",
-            "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
-            "\t};",
-            "}"
+			"static get properties() {",
+			"\treturn {",
+			"\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
+			"\t};",
+			"}"
 		],
 		"description": "Generate LitElement Property"
-    },
+	},
+	"Generate Element Query Property in Javascript": {
+		"scope": "javascript",
+		"prefix": "litquery",
+		"body": [
+			"get ${1:propName}() {",
+			"\treturn this.shadowRoot.querySelector('${2:queryString}');",
+			"}"
+		],
+		"description": "Generate Element Query Property"
+	},
+	"Generate Element Query Property in Typescript": {
+		"scope": "typescript",
+		"prefix": "litquery",
+		"body": [
+			"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
+		],
+		"description": "Generate Element Query Property"
+	},
+	"Generate Elements Query Property in Javascript": {
+		"scope": "javascript",
+		"prefix": "litqueryall",
+		"body": [
+			"get ${1:propName}() {",
+			"\treturn this.shadowRoot.querySelectorAll('${2:queryString}');",
+			"}${0}"
+		],
+		"description": "Generate Elements Query Property"
+	},
+	"Generate Elements Query Property in Typescript": {
+		"scope": "typescript",
+		"prefix": "litqueryall",
+		"body": [
+			"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
+		],
+		"description": "Generate Elements Query Property"
+	},
     "Generate LitElement Static Style": {
-        "scope": "javascript,typescript",
-        "prefix": "litstyle",
-        "body": [
-            "static styles = css``;"
-        ]
-    },
-    "Add New Event Listener": {
-        "scope": "javascript,typescript",
-        "prefix": "addeventlistener",
-        "body": [
-            "this.addEventListener('${1:eventName}', ${2:handler});"
-        ]
-    },
-    "Add New Custome Event": {
-        "scope": "javascript,typescript",
-        "prefix": "customevent",
-        "body": [
-            "new CustomEvent('${1:eventName}');"
-        ]
-    }
+		"scope": "javascript,typescript",
+		"prefix": "litstyle",
+		"body": [
+			"static styles = css``;"
+		]
+	},
+	"Add New Event Listener": {
+		"scope": "javascript,typescript",
+		"prefix": "addeventlistener",
+		"body": [
+			"this.addEventListener('${1:eventName}', ${2:handler});"
+		]
+	},
+	"Add New Custome Event": {
+		"scope": "javascript,typescript",
+		"prefix": "customevent",
+		"body": [
+			"new CustomEvent('${1:eventName}');"
+		]
+	}
 }
