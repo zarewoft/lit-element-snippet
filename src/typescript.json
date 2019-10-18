@@ -47,5 +47,12 @@
 		"@query('${1:queryString}') ${2:propName}: ${3:any};${0}"
 	  ],
 	  "description": "Generate Element Query Property"
+	},
+	"Generate Elements Query Property": {
+	  "prefix": "litqueryall",
+	  "body": [
+		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:any}>;${0}"
+	  ],
+	  "description": "Generate Elements Query Property"
 	}
 }
