@@ -1,6 +1,6 @@
 {
     "Generate Render Function With lit-html": {
-        "prefix": "litrender",
+        "prefix": ["litrender", "render"],
         "body": [
             "render() {",
             "\treturn html`${0}`;",

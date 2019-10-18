@@ -75,7 +75,7 @@
 	},
 	"Generate Render Function With lit-html": {
 		"scope": "javascript,typescript",
-		"prefix": "litrender",
+		"prefix": ["litrender", "render"],
 		"body": [
 			"render() {",
 			"\treturn html`${0}`;",
