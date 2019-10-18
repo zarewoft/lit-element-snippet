@@ -11,7 +11,7 @@
     "Generate LitElement Static Style": {
         "prefix": "litstyle",
         "body": [
-            "static styles = css``;"
+            "static styles = css`${0}`;"
         ]
     },
     "Add New Event Listener": {
