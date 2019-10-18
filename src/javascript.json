@@ -34,6 +34,14 @@
     ],
     "description": "New LitElement subclass"
   },
+  "Generate LitElement Property in Javascript": {
+		"scope": "javascript",
+		"prefix": ["property"],
+		"body": [
+			"${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} },${0}"
+		],
+		"description": "Generate LitElement Property"
+	},
   "Generate LitElement Properties": {
     "prefix": ["litprop", "properties"],
     "body": [
