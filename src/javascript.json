@@ -47,7 +47,7 @@
     "body": [
       "static get properties() {",
       "\treturn {",
-      "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
+      "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} },${0}",
       "\t};",
       "}"
     ],
