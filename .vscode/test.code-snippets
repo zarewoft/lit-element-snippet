@@ -31,7 +31,7 @@
 		"scope": "typescript",
 		"prefix": "litelehtml",
 		"body": [
-			"import { LitElement, html, customElement } from 'lit-element';",
+			"import { LitElement, html, customElement, css } from 'lit-element';",
 			"",
 			"@customElement('${TM_FILENAME_BASE}')",
             "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
@@ -54,7 +54,7 @@
 		"scope": "javascript",
 		"prefix": "litelehtml",
 		"body": [
-			"import { LitElement, html } from 'lit-element';",
+			"import { LitElement, html, css } from 'lit-element';",
 			"",
             "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
 			"",
