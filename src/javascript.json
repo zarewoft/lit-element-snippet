@@ -1,22 +1,22 @@
 {
-    "Create LitElement Component": {
-		"prefix": "litele",
-		"body": [
-			"import { LitElement } from 'lit-element';",
-			"",
+  "Create LitElement Component": {
+    "prefix": "litele",
+    "body": [
+      "import { LitElement } from 'lit-element';",
+      "",
       "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
       "\t${0}",
       "}",
       "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
       ""
-		],
-		"description": "New LitElement subclass"
-	},
-    "Create LitElement Component With lit-html": {
-		"prefix": "litelehtml",
-		"body": [
-			"import { LitElement, html, css } from 'lit-element';",
-			"",
+    ],
+    "description": "New LitElement subclass"
+  },
+  "Create LitElement Component With lit-html": {
+    "prefix": "litelehtml",
+    "body": [
+      "import { LitElement, html, css } from 'lit-element';",
+      "",
       "export class ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g} extends LitElement {",
       "",
       "\tstatic styles = css`",
@@ -31,18 +31,18 @@
       "}",
       "customElements.define('${TM_FILENAME_BASE}', ${TM_FILENAME_BASE/([a-z]*)(-)?/${1:/capitalize}/g});",
       ""
-		],
-		"description": "New LitElement subclass"
-	},
-    "Generate LitElement Property": {
-		"prefix": "litprop",
-		"body": [
+    ],
+    "description": "New LitElement subclass"
+  },
+  "Generate LitElement Property": {
+    "prefix": "litprop",
+    "body": [
       "static get properties() {",
       "\treturn {",
       "\t\t${1:propName}: { type: ${2|String,Number,Boolean,Array,Object|} }${0}",
       "\t};",
       "}"
-		],
-		"description": "Generate LitElement Property"
-    }
+    ],
+    "description": "Generate LitElement Property"
+  }
 }

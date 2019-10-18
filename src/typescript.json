@@ -1,5 +1,5 @@
 {
-    "Create LitElement Component": {
+	"Create LitElement Component": {
 		"prefix": "litele",
 		"body": [
 			"import { LitElement, customElement } from 'lit-element';",
@@ -11,8 +11,8 @@
 			""
 		],
 		"description": "New LitElement subclass"
-    },
-    "Create LitElement Component With lit-html": {
+	},
+	"Create LitElement Component With lit-html": {
 		"prefix": "litelehtml",
 		"body": [
 			"import { LitElement, html, customElement, css } from 'lit-element';",
@@ -33,12 +33,12 @@
 			""
 		],
 		"description": "New LitElement subclass with lit-html"
-    },
-    "Generate LitElement Property": {
+	},
+	"Generate LitElement Property": {
 		"prefix": "litprop",
 		"body": [
 			"@property({ type: ${1|String,Number,Boolean,Array,Object|} }) ${2:propName}: ${3:any};"
 		],
 		"description": "Generate LitElement Property"
-    }
+	}
 }
