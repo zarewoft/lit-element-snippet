@@ -21,4 +21,4 @@ steps:
 - script: |
     npm install
     npm run publish -- -p $(PERSONAL_TOKEN)
-  displayName: 'npm install and build'
+  displayName: 'Publish'
