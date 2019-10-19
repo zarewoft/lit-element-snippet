@@ -4,6 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
+  batch: true
   tags:
     include:
     - v*
@@ -20,4 +21,4 @@ steps:
 - script: |
     npm install
     npm run publish -- -p $(PERSONAL_TOKEN)
-  displayName: 'Publish'
+  displayName: 'npm install and build'
