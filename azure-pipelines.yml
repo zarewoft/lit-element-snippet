@@ -9,6 +9,8 @@ trigger:
     include:
     - v*
 
+pr: none
+
 pool:
   vmImage: 'Ubuntu-16.04'
 
