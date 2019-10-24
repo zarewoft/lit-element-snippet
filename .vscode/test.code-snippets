@@ -167,5 +167,12 @@
 		"body": [
 			"new CustomEvent('${1:eventName}');"
 		]
+	},
+	"Dispatch Event": {
+		"scope": "javascript,typescript",
+		"prefix": ["litdispatchevent", "dispatchevent"],
+		"body": [
+			"this.dispatchEvent(${1:event});${0}"
+		]
 	}
 }
