@@ -31,5 +31,33 @@
 		"body": [
 			"this.dispatchEvent(${1:event});${0}"
 		]
+    },
+	"Generate Connected Callback": {
+		"prefix": ["litconnectedcallback", "connectedcallback"],
+		"body": [
+			"connectedCallback() {",
+			"\t${0}",
+			"}"
+        ],
+		"description": "Generate connectedCallback(): Invoked when a component is added to the document's DOM."
+    },
+	"Generate Disconnected Callback": {
+		"prefix": ["litdisconnectedcallback", "disconnectedcallback"],
+		"body": [
+			"disconnectedCallback() {",
+			"\t${0}",
+			"}"
+        ],
+        "description": "Generate disconnectedCallback(): Invoked when a component is removed from the document's DOM."
+    },
+	"Generate Adopted Callback": {
+		"prefix": ["litadoptedcallback", "adoptedcallback"],
+		"body": [
+			"adoptedCallback() {",
+			"\tsuper.adoptedCallback();",
+			"\t${0}",
+			"}"
+        ],
+        "description": "Generate adoptedCallback(): Invoked when a component is moved to a new document."
 	}
 }

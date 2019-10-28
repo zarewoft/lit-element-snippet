@@ -70,5 +70,15 @@
       "}${0}"
     ],
     "description": "Generate Elements Query Property"
-  }
+  },
+  "Generate Attribute Changed Callback": {
+		"prefix": ["litattributechangedcallback", "attributechangedcallback"],
+		"body": [
+			"attributeChangedCallback(name, oldValue, newValue) {",
+			"\tsuper.attributeChangedCallback(name, oldValue, newValue);",
+			"\t${0}",
+			"}"
+    ],
+    "description": "Generate attributeChangedCallback(): Invoked when component attribute changes."
+	}
 }

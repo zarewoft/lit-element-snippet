@@ -54,5 +54,15 @@
 		"@queryAll('${1:queryString}') ${2:propName}: NodeListOf<${3:HTMLElement}>;${0}"
 	  ],
 	  "description": "Generate Elements Query Property"
+	},
+	"Generate Attribute Changed Callback": {
+		"prefix": ["litattributechangedcallback", "attributechangedcallback"],
+		"body": [
+			"attributeChangedCallback(name: string, oldValue: string, newValue: string) {",
+			"\tsuper.attributeChangedCallback(name, oldValue, newValue);",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate attributeChangedCallback(): Invoked when component attribute changes."
 	}
 }
