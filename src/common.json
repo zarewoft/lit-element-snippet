@@ -41,7 +41,8 @@
 	"Generate Connected Callback": {
 		"prefix": ["litconnectedcallback", "connectedcallback"],
 		"body": [
-			"connectedCallback() {",
+            "connectedCallback() {",
+            "\tsuper.connectedCallback();",
 			"\t${0}",
 			"}"
         ],
@@ -50,7 +51,8 @@
 	"Generate Disconnected Callback": {
 		"prefix": ["litdisconnectedcallback", "disconnectedcallback"],
 		"body": [
-			"disconnectedCallback() {",
+            "disconnectedCallback() {",
+            "\tsuper.disconnectedCallback();",
 			"\t${0}",
 			"}"
         ],
