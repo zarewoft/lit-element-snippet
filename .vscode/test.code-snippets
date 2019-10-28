@@ -181,5 +181,68 @@
 		"body": [
 			"import '${0}';"
 		]
-	}
+	},
+	"Generate Connected Callback": {
+		"scope": "javascript,typescript",
+		"prefix": ["litconnectedcallback", "connectedcallback"],
+		"body": [
+			"connectedCallback() {",
+			"\tsuper.connectedCallback();",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate connectedCallback(): Invoked when a component is added to the document's DOM."
+	},
+	"Generate Disconnected Callback": {
+		"scope": "javascript,typescript",
+		"prefix": ["litdisconnectedcallback", "disconnectedcallback"],
+		"body": [
+			"disconnectedCallback() {",
+			"\tsuper.disconnectedCallback();",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate disconnectedCallback(): Invoked when a component is removed from the document's DOM."
+	},
+	"Generate Adopted Callback": {
+		"scope": "javascript,typescript",
+		"prefix": ["litadoptedcallback", "adoptedcallback"],
+		"body": [
+			"adoptedCallback() {",
+			"\tsuper.adoptedCallback();",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate adoptedCallback(): Invoked when a component is moved to a new document."
+	},
+	"Generate Attribute Changed Callback JavaScript": {
+		"scope": "javascript",
+		"prefix": ["litattributechangedcallback", "attributechangedcallback"],
+		"body": [
+			"attributeChangedCallback(name, oldValue, newValue) {",
+			"\tsuper.attributeChangedCallback(name, oldValue, newValue);",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate attributeChangedCallback(): Invoked when component attribute changes."
+	},
+	"Generate Attribute Changed Callback TypeScript": {
+		"scope": "typescript",
+		"prefix": ["litattributechangedcallback", "attributechangedcallback"],
+		"body": [
+			"attributeChangedCallback(name: string, oldValue: string, newValue: string) {",
+			"\tsuper.attributeChangedCallback(name, oldValue, newValue);",
+			"\t${0}",
+			"}"
+		],
+		"description": "Generate attributeChangedCallback(): Invoked when component attribute changes."
+	},
+	"Generate Observed Attributes": {
+		"scope": "javascript,typescript",
+		"prefix": ["observedattributes"],
+		"body": [
+			"static get observedAttributes() { return ['${1:nameOfAttribute}']; }"
+		],
+		"description": "Generate observedAttributes getter: Returns an array containing the names of the attributes you want to observe."
+	},
 }
