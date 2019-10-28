@@ -230,4 +230,12 @@
 		],
 		"description": "Generate attributeChangedCallback(): Invoked when component attribute changes."
 	},
+	"Generate Observed Attributes": {
+		"scope": "javascript,typescript",
+		"prefix": ["observedattributes"],
+		"body": [
+			"static get observedAttributes() { return ['${1:nameOfAttribute}']; }"
+		],
+		"description": "Generate observedAttributes getter: Returns an array containing the names of the attributes you want to observe."
+	},
 }

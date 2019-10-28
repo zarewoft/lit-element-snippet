@@ -59,5 +59,12 @@
 			"}"
         ],
         "description": "Generate adoptedCallback(): Invoked when a component is moved to a new document."
+    },
+    "Generate Observed Attributes": {
+		"prefix": ["observedattributes"],
+		"body": [
+			"static get observedAttributes() { return ['${1:nameOfAttribute}']; }"
+		],
+		"description": "Generate observedAttributes getter: Returns an array containing the names of the attributes you want to observe."
 	}
 }
