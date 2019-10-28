@@ -177,7 +177,7 @@
 	},
 	"Import Element": {
 		"scope": "javascript,typescript",
-		"prefix": ["litimportele", "litimportele"],
+		"prefix": ["litimportele", "importele"],
 		"body": [
 			"import '${0}';"
 		]

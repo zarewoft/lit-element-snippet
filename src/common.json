@@ -33,7 +33,7 @@
 		]
     },
     "Import Element": {
-		"prefix": ["litimportele", "litimportele"],
+		"prefix": ["litimportele", "importele"],
 		"body": [
 			"import '${0}';"
 		]
