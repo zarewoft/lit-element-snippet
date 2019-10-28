@@ -174,5 +174,12 @@
 		"body": [
 			"this.dispatchEvent(${1:event});${0}"
 		]
+	},
+	"Import Element": {
+		"scope": "javascript,typescript",
+		"prefix": ["litimportele", "importele"],
+		"body": [
+			"import '${0}';"
+		]
 	}
 }
