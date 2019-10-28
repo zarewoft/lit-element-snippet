@@ -31,5 +31,11 @@
 		"body": [
 			"this.dispatchEvent(${1:event});${0}"
 		]
+    },
+    "Import Element": {
+		"prefix": ["litimportele", "litimportele"],
+		"body": [
+			"import '${0}';"
+		]
 	}
 }
